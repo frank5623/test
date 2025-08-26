@@ -34,7 +34,7 @@ namespace WinForm_test1
             btnDownload.Enabled = false; // 暫時停用按鈕，避免重複點擊
             textBox1.Text = "下載中...";
 
-            string content = await DownloadContentAsync("https://jsonplaceholder.typicode.com/todos/1");
+            string content = await DownloadContentAsync("https://jsonplaceholder.typicode.com/todos/");
 
 
             if (content.Length > 200)
@@ -45,6 +45,22 @@ namespace WinForm_test1
             btnDownload.Enabled = true;
         }
 
+        public async Task<string> DownloadContentAsync(string url)
+        {
+            // 建立 RestClient
+            var client = new RestClient(url);
+
+            // 建立 GET 請求 //可更改目標5
+            var request = new RestRequest("5", Method.Get);
+
+            // 執行請求
+            var response = await client.ExecuteAsync(request);
+
+            // 回傳內容
+            return response.Content;
+        }
+
+        /*
         private async Task<string> DownloadContentAsync(string url)
         {
             using (HttpClient client = new HttpClient())
@@ -52,7 +68,7 @@ namespace WinForm_test1
                 string content = await client.GetStringAsync(url);
                 return content;
             }
-        }
+        }*/
         //========================================================================
         private void Button1_Click(object sender, EventArgs e)
         {
