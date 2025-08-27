@@ -22,6 +22,8 @@ namespace WinForm_test1
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            textBox1.ImeMode = ImeMode.Off;
+            textBox3.ImeMode = ImeMode.Off;
 
             comboBox1.Items.Add("+");
             comboBox1.Items.Add("-");

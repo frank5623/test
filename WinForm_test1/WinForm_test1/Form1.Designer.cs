@@ -52,6 +52,7 @@
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.textBox1.Location = new System.Drawing.Point(28, 29);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
@@ -60,6 +61,7 @@
             // 
             // textBox3
             // 
+            this.textBox3.Font = new System.Drawing.Font("PMingLiU", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox3.Location = new System.Drawing.Point(222, 29);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
@@ -149,7 +151,7 @@
             this.txtResult.Name = "txtResult";
             this.txtResult.Size = new System.Drawing.Size(116, 119);
             this.txtResult.TabIndex = 12;
-            this.txtResult.Text = "RestSharp_txtResult";
+            this.txtResult.Text = "Nuget套件_RestSharp";
             // 
             // label2
             // 

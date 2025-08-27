@@ -5,7 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using RestSharp;
+using RestSharp;        //API 取資料
 using System.Net.Http; //API 取資料 
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -44,7 +44,7 @@ namespace WinForm_test1
 
             btnDownload.Enabled = true;
         }
-
+        /*
         public async Task<string> DownloadContentAsync(string url)
         {
             // 建立 RestClient
@@ -59,8 +59,8 @@ namespace WinForm_test1
             // 回傳內容
             return response.Content;
         }
-
-        /*
+        */
+        
         private async Task<string> DownloadContentAsync(string url)
         {
             using (HttpClient client = new HttpClient())
@@ -68,7 +68,7 @@ namespace WinForm_test1
                 string content = await client.GetStringAsync(url);
                 return content;
             }
-        }*/
+        }
         //========================================================================
         private void Button1_Click(object sender, EventArgs e)
         {
