@@ -50,7 +50,7 @@
             // btnDownload
             // 
             this.btnDownload.Font = new System.Drawing.Font("DFKai-SB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDownload.Location = new System.Drawing.Point(12, 252);
+            this.btnDownload.Location = new System.Drawing.Point(32, 252);
             this.btnDownload.Name = "btnDownload";
             this.btnDownload.Size = new System.Drawing.Size(77, 35);
             this.btnDownload.TabIndex = 21;
@@ -65,13 +65,14 @@
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Both;
-            this.textBox1.Size = new System.Drawing.Size(123, 238);
+            this.textBox1.Size = new System.Drawing.Size(145, 238);
             this.textBox1.TabIndex = 22;
+            this.textBox1.Text = "Using System.Net.Http;";
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("DFKai-SB", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(163, 102);
+            this.button1.Location = new System.Drawing.Point(181, 102);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 35);
             this.button1.TabIndex = 23;
@@ -82,7 +83,7 @@
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("DFKai-SB", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(141, 8);
+            this.textBox2.Location = new System.Drawing.Point(163, 8);
             this.textBox2.Multiline = true;
             this.textBox2.Name = "textBox2";
             this.textBox2.ScrollBars = System.Windows.Forms.ScrollBars.Both;
